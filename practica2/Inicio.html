@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CAIXABANK</title>
+</head>
+<body>
+<!-- PARA INICIAR SESIÓN-->
+
+<center>
+    <img src="logo.PNG" width=700 height=100><br></br>
+</center>
+<center>
+    <br></br>
+    <header>
+        <h1> Ser los primeros en estar contigo</h1>
+    </header>
+</center><br></br>
+<center>
+    <!-- PARA INICIAR SESIÓN<a href="Inicio.html"><button type="submit" style="background-color: #009FE3">Inicio</button></a> -->
+    <a href="pagina.html"><button type="submit" style="background-color: #009FE3">Pagina principal</button></a>
+    <a href="Nosotros.html"><button type="submit" style="background-color: #009FE3">Sobre nosotros</button></a>
+    <a href="Contacto.html"><button type="submit" style="background-color: #009FE3">Contacto</button></a>
+    <a href="Trabaja.html"><button type="submit" style="background-color: #009FE3">Trabaja con nosotros</button></a>
+</center>
+<!--no entiendo por que no me dirige a la otra página-->
+<form action="iniciado.html" target="_parent">
+    <center>
+        <div>
+            Nombre: <input type="text" name="nombre" required="" pattern="[a-z]+">
+        </div>
+        <div>
+            Ingresa tu dni sin letra:  <input type="text" name="dni" minlength="8" maxlength="8" required="" pattern="[0-9]+">
+        </div>
+        <div>
+            Contraseña: <input type="password" name="contraseña" required="">
+        </div>
+        <div>
+            <form href="iniciado.html">
+                <input type="submit" style="background-color: #009FE3" value="Iniciar sesión" />
+            </form>
+        </div>
+    </center>
+</form>
+
+<center>
+    ¿No tiene cuenta?
+    <a href="registrase.html"><button type="submit" style="background-color: #009FE3">Registrarse</button></a>
+</center>
+
+<footer>
+    <center>
+        <img src="pie.jpg" width=500 height=100>
+    </center>
+</footer>
+
+</body>
+</html>

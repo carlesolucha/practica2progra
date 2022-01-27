@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CAIXABANK</title>
+</head>
+<!--
+- Títulos               HECHO
+- Párrafos              HECHO
+- Tablas                HECHO
+- Multimedia            HECHO
+- Formularios Web       TENGO QUE HACER 2
+nombre
+apellidos
+edad
+sexo (desplegable)
+contraseña
+contraseña2
+-->
+<body>
+<center>
+    <img src="logo.PNG" width=700 height=100><br></br>
+</center>
+<center>
+    <br></br>
+    <header>
+        <h1> Ser los primeros en estar contigo</h1>
+    </header>
+</center><br></br>
+<center>
+    <a href="Inicio.html"><button type="submit" style="background-color: #009FE3">Inicio</button></a>
+    <a href="Nosotros.html"><button type="submit" style="background-color: #009FE3">Sobre nosotros</button></a>
+    <a href="Contacto.html"><button type="submit" style="background-color: #009FE3">Contacto</button></a>
+    <a href="Trabaja.html"><button type="submit" style="background-color: #009FE3">Trabaja con nosotros</button></a>
+</center>
+
+<form action="registradoCorrecto.html" target="_parent">
+
+    <center>
+        Nombre: <input type="text" name="nombre" required="" pattern="[a-z]+">
+        <br></br>
+        Apellidos: <input type="text" name="apellidos" required="" pattern="[a-z]+">
+        <br></br>
+        Ingresa tu dni sin letra:  <input type="text" name="dni" minlength="8" maxlength="8" required="" pattern="[0-9]+">
+        <br></br>
+        Año nacimiento:  <input type="number" name="año" min="1900" max="2004" required="" pattern="[0-9]+">
+        <br></br>
+        <label  > Sexo: </label>
+        <select name="select">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+        </select>
+        <br></br>
+        Contraseña: <input type="password" name="contraseña" required=""  >
+        <br></br>
+        <form href="registradoCorrecto.html">
+            <input type="submit" style="background-color: #009FE3" value="Registrarme" />
+        </form>
+    </center>
+
+<!--acepto términos y condiciones -->
+</form>
+
+
+<footer>
+    <center>
+        <img src="pie.jpg" width=500 height=100>
+    </center>
+</footer>
+
+</body>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAIXABANK</title>
+</head>
+<body>
+<!-- RECORDAR PONER LOS LINKS AQUÍ-->
+<!-- PONERLO EN EL CENTRO TODO Y ORGANIZARLO-->
+<!-- PONER EL PIE DE FOTO-->
+
+<!-- https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation-->
+
+<!-- FORMULARIO EN EL QUE SOLICITES TRABAJO-->
+
+<center>
+    <img src="logo.PNG" width=700 height=100><br></br>
+</center>
+<center>
+    <br></br>
+    <header>
+        <h1> Ser los primeros en estar contigo</h1>
+    </header>
+</center><br></br>
+<center>
+    <a href="Inicio.html"><button type="submit" style="background-color: #009FE3">Inicio</button></a>
+    <a href="pagina.html"><button type="submit" style="background-color: #009FE3">Pagina principal</button></a>
+    <a href="Nosotros.html"><button type="submit" style="background-color: #009FE3">Sobre nosotros</button></a>
+    <a href="Contacto.html"><button type="submit" style="background-color: #009FE3">Contacto</button></a> <br></br>
+    <!--<a href="Trabaja.html"><button type="submit" style="background-color: #009FE3">Trabaja con nosotros</button></a> -->
+</center>
+
+<form>
+    <center>
+        Nombre: <input type="text" name="nombre" required="" pattern="[a-z]+">
+        <br></br>
+        Apellidos: <input type="text" name="apellidos" required="" pattern="[a-z]+">
+        <br></br>
+        Año nacimiento:  <input type="number" name="año" min="1900" max="2004" required="" pattern="[0-9]+">
+        <br></br>
+        <label  > Sexo: </label>
+        <select name="select">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+        </select>
+        <br></br>
+        <!-- Carnet de conducir? -->
+        <div class="pregresp">
+            <div class="pregunta" reguired="">Tiene carnet de conducir?<br />
+            </div>
+            <div class="respuestas">
+                <input type="radio" name="Sí" value="1" /> Sí<br />
+                <input type="radio" name="No" value="2" /> No<br />
+            </div>
+        </div>
+        <!-- Estudios -->
+        <div class="pregresp" required="">
+            <div class="pregunta">Niveles de estudios<br />
+            </div>
+            <div class="respuestas">
+                <input type="radio" name="Ninguno" value="1" /> Ninguno<br />
+                <input type="radio" name="ESO" value="2" /> ESO<br />
+                <input type="radio" name="Estudiante universitario" value="2" /> Estudiante universitario<br />
+                <input type="radio" name="Graduado universitario" value="2" /> Graduado universitario<br />
+                <input type="radio" name="Mater" value="2" /> Mater<br />
+                <input type="radio" name="Doctorado" value="2" /> Doctorado<br />
+                <input type="radio" name="Otro" value="2" /> Otro: ¿Cuál?: <input type="text" name="nombre"  pattern="[a-z]+">
+            </div>
+        </div>
+
+        <input type="submit" value="Enviar"  style="background-color: #009FE3">
+    </center>
+
+    <!--acepto términos y condiciones -->
+</form>
+
+
+
+<footer>
+    <center>
+        <img src="pie.jpg" width=500 height=100>
+    </center>
+</footer>
+
+</body>
+</html>
